@@ -2,7 +2,22 @@
 @import "tailwindcss";
 
 @theme {
+    /* Brand */
     --color-primary: #9D4300;
     --color-primary-container: #F97316;
     --font-sans: 'Manrope', sans-serif;
+
+    /* Surface hierarchy */
+    --color-surface: #F7F9FB;
+    --color-surface-container-low: #F2F4F6;
+    --color-surface-container: #ECEEF0;
+    --color-surface-container-lowest: #FFFFFF;
+
+    /* Text */
+    --color-on-surface: #191C1E;
+    --color-on-surface-variant: #44474E;
+
+    /* Font */
+    --font-sans: 'Manrope', sans-serif;
+
 }
