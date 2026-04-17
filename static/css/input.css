@@ -1,0 +1,8 @@
+/* static/css/input.css */
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #9D4300;
+    --color-primary-container: #F97316;
+    --font-sans: 'Manrope', sans-serif;
+}
