@@ -1,0 +1,84 @@
+{% load static %}
+<section class="bg-surface">
+    <div class="max-w-7xl mx-auto px-6 py-20 w-full">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+
+            <!-- Left Column -->
+            <div class="md:col-span-6 flex flex-col gap-6">
+
+                <!-- Overline -->
+                <span class="text-primary-container font-semibold tracking-[0.05em] uppercase"
+                      style="font-size: 0.75rem;">
+                    Future-Proof Engineering
+                </span>
+
+                <!-- Headline -->
+                <h1 class="font-extrabold leading-tight tracking-tight"
+                    style="font-size: 3.5rem; letter-spacing: -0.02em;">
+                    Empowering<br>
+                    <span class="text-primary-container">Digital Innovation</span>
+                </h1>
+
+                <!-- Body -->
+                <p class="text-on-surface-variant leading-relaxed max-w-md"
+                   style="font-size: 1rem; line-height: 1.6;">
+                    LGS orchestrates complex technological ecosystems, turning
+                    architectural visions into scalable digital realities for the
+                    world's most ambitious enterprises.
+                </p>
+
+                <!-- CTAs -->
+                <div class="flex items-center gap-4 flex-wrap">
+                    <!-- Primary CTA -->
+                    <a href="#"
+                    class="inline-flex items-center gap-2 text-on-primary font-semibold 
+                            px-6 py-3 rounded-md transition-all duration-200
+                            hover:opacity-95 hover:scale-[1.02]"
+                    style="font-size: 0.875rem;
+                            background: linear-gradient(135deg, #F97316, #9D4300);">
+                        Launch Transformation
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                    <!-- Secondary CTA -->
+                    <a href="#"
+                    class="inline-flex items-center gap-2 font-semibold text-on-surface
+                            px-6 py-3 rounded-md transition-all duration-200
+                            hover:bg-surface-container-low hover:text-primary-container"
+                    style="font-size: 0.875rem;
+                            border: 1px solid rgba(25, 28, 30, 0.15);">
+                        Explore Expertise
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Right Column -->
+            <div class="md:col-span-6 relative">
+
+                <!-- Dark Image Panel -->
+                <div class="relative rounded-lg overflow-hidden"
+                    style="background: #1E2124; min-height: 380px;">
+                    <img src="{% static 'images/hero_image.svg' %}"
+                        alt="LGS Network Infrastructure"
+                        class="absolute inset-0 w-full h-full object-cover opacity-80">
+                </div>
+
+                <!-- Floating Stats Card -->
+                <div class="absolute -bottom-6 -left-6 bg-surface-container-lowest
+                            px-6 py-5 rounded-md"
+                     style="box-shadow: 0px 20px 40px rgba(25, 28, 30, 0.06);">
+                    <p class="text-primary-container font-extrabold leading-none"
+                       style="font-size: 2.5rem;">
+                        99.9%
+                    </p>
+                    <p class="text-on-surface-variant font-semibold tracking-[0.05em] uppercase mt-1"
+                       style="font-size: 0.65rem;">
+                        Infrastructure<br>Reliability
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
