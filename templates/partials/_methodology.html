@@ -1,0 +1,51 @@
+<section id="process" class="bg-surface py-24">
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Section Header -->
+        <div class="mb-20">
+            <h2 class="font-extrabold text-on-surface mb-4"
+                style="font-size: 2.25rem; letter-spacing: -0.02em;">
+                The LGS Methodology
+            </h2>
+            <p class="text-on-surface-variant max-w-lg"
+               style="font-size: 1rem; line-height: 1.6;">
+                Our structured approach ensures predictable delivery of
+                complex technological solutions.
+            </p>
+        </div>
+
+        <!-- Steps Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+
+            {% for step in methodology_steps %}
+            <div class="flex flex-col gap-4">
+
+                <!-- Step Number -->
+                <span class="font-extrabold leading-none select-none"
+                      style="font-size: 4rem;
+                             letter-spacing: -0.02em;
+                             color: #ECEEF0;">
+                    {{ step.number }}
+                </span>
+
+                <!-- Title -->
+                <h3 class="font-bold text-on-surface"
+                    style="font-size: 1.125rem;">
+                    {{ step.title }}
+                </h3>
+
+                <!-- Description -->
+                <p class="text-on-surface-variant flex-1"
+                   style="font-size: 0.9375rem; line-height: 1.6;">
+                    {{ step.description }}
+                </p>
+
+                <!-- Orange accent line -->
+                <div class="h-0.5 w-full bg-primary-container mt-2 rounded-full"></div>
+
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
