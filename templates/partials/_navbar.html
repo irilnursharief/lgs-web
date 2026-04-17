@@ -1,0 +1,89 @@
+<!-- templates/partials/_navbar.html -->
+<header class="bg-surface-container-lowest sticky top-0 z-50"
+        style="box-shadow: 0px 1px 0px rgba(25, 28, 30, 0.06);">
+
+    <nav class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+
+        <!-- Wordmark -->
+        <a href="{% url 'home' %}"
+           class="text-on-surface font-extrabold text-xl tracking-tight">
+            LGS
+        </a>
+
+        <!-- Desktop Links -->
+        <ul class="hidden md:flex items-center gap-8">
+            {% for item in nav_links %}
+            <li>
+                <a href="{{ item.url }}"
+                    class="text-sm font-medium text-on-surface-variant 
+                            hover:text-primary-container hover:font-semibold
+                            border-b-2 border-transparent hover:border-primary-container
+                            transition-colors duration-200">
+                    {{ item.label }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <!-- CTA -->
+        <div class="hidden md:flex items-center gap-4">
+            <a href="#"
+               class="bg-primary-container text-on-primary text-sm font-semibold
+                      px-5 py-2 rounded-md transition-opacity duration-200
+                      hover:opacity-90">
+                Get Started
+            </a>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <button id="mobile-menu-btn"
+                class="md:hidden flex flex-col gap-1.5 p-2"
+                aria-label="Toggle menu">
+            <span class="block w-5 h-0.5 bg-on-surface transition-all duration-300" id="bar1"></span>
+            <span class="block w-5 h-0.5 bg-on-surface transition-all duration-300" id="bar2"></span>
+            <span class="block w-5 h-0.5 bg-on-surface transition-all duration-300" id="bar3"></span>
+        </button>
+
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+         class="md:hidden hidden flex-col px-6 pb-6 gap-4 bg-surface-container-lowest">
+        {% for item in nav_links %}
+        <a href="{{ item.url }}"
+           class="text-sm font-medium py-2 border-b border-surface-container
+                  {% if request.resolver_match.url_name == item.name %}
+                      text-primary-container
+                  {% else %}
+                      text-on-surface-variant
+                  {% endif %}">
+            {{ item.label }}
+        </a>
+        {% endfor %}
+        <a href="#"
+           class="bg-primary-container text-on-primary text-sm font-semibold
+                  text-center px-5 py-2 rounded-md mt-2">
+            Get Started
+        </a>
+    </div>
+
+</header>
+
+<!-- Mobile menu toggle script -->
+<script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const bar1 = document.getElementById('bar1');
+    const bar2 = document.getElementById('bar2');
+    const bar3 = document.getElementById('bar3');
+
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('flex');
+        bar1.classList.toggle('rotate-45');
+        bar1.classList.toggle('translate-y-2');
+        bar2.classList.toggle('opacity-0');
+        bar3.classList.toggle('-rotate-45');
+        bar3.classList.toggle('-translate-y-2');
+    });
+</script>
