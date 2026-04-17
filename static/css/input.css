@@ -3,9 +3,9 @@
 
 @theme {
     /* Brand */
-    --color-primary: #9D4300;
+    --color-primary: #E65100;
     --color-primary-container: #F97316;
-    --font-sans: 'Manrope', sans-serif;
+    --color-on-primary: #FFFFFF;
 
     /* Surface hierarchy */
     --color-surface: #F7F9FB;

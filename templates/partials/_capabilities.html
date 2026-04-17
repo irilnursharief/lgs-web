@@ -1,0 +1,139 @@
+{% load static %}
+<section id="capabilities" class="bg-surface-container-low py-24">
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Section Header -->
+        <div class="mb-16">
+            <h2 class="font-extrabold text-on-surface mb-4"
+                style="font-size: 2.25rem; letter-spacing: -0.02em;">
+                Core Capabilities
+            </h2>
+            <p class="text-on-surface-variant max-w-md"
+               style="font-size: 1rem; line-height: 1.6;">
+                Architectural excellence across the full stack of modern
+                enterprise requirements.
+            </p>
+        </div>
+
+        <!-- Row 1 — Two equal cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+
+            <!-- Cloud Strategy -->
+            <div class="bg-surface-container-lowest rounded-lg p-8
+                        hover:bg-surface-container transition-colors duration-200">
+                <div class="w-12 h-12 rounded-md flex items-center justify-center mb-8"
+                     style="background: #FFDBCA;">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24"
+                         fill="none" stroke="#9D4300" stroke-width="2" stroke-linecap="round">
+                        <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                    </svg>
+                </div>
+                <h3 class="font-bold text-on-surface mb-3"
+                    style="font-size: 1.375rem;">
+                    Cloud Strategy
+                </h3>
+                <p class="text-on-surface-variant mb-8"
+                   style="font-size: 0.9375rem; line-height: 1.6;">
+                    Multi-cloud and hybrid infrastructure design optimized
+                    for scale, resilience, and cost-efficiency.
+                </p>
+                <a href="#"
+                   class="inline-flex items-center gap-2 text-primary font-semibold
+                          hover:text-primary-container transition-colors duration-200"
+                   style="font-size: 0.875rem;">
+                    Learn more <span aria-hidden="true">→</span>
+                </a>
+            </div>
+
+            <!-- AI & Machine Learning -->
+            <div class="bg-surface-container-lowest rounded-lg p-8
+                        hover:bg-surface-container transition-colors duration-200">
+                <div class="w-12 h-12 rounded-md flex items-center justify-center mb-8"
+                     style="background: #E8EAF6;">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24"
+                         fill="none" stroke="#3949AB" stroke-width="2" stroke-linecap="round">
+                        <circle cx="12" cy="8" r="4"/>
+                        <path d="M12 12v9M8 17h8"/>
+                        <circle cx="12" cy="8" r="1" fill="#3949AB"/>
+                    </svg>
+                </div>
+                <h3 class="font-bold text-on-surface mb-3"
+                    style="font-size: 1.375rem;">
+                    AI & Machine Learning
+                </h3>
+                <p class="text-on-surface-variant mb-8"
+                   style="font-size: 0.9375rem; line-height: 1.6;">
+                    Custom neural architectures and predictive models that
+                    turn raw data into actionable enterprise intelligence.
+                </p>
+                <a href="#"
+                   class="inline-flex items-center gap-2 text-primary font-semibold
+                          hover:text-primary-container transition-colors duration-200"
+                   style="font-size: 0.875rem;">
+                    Learn more <span aria-hidden="true">→</span>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Row 2 — Asymmetric grid -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+
+            <!-- Cyber Defense — 1 col -->
+            <div class="md:col-span-1 bg-surface-container-lowest rounded-lg p-8
+                        hover:bg-surface-container transition-colors duration-200">
+                <div class="w-12 h-12 rounded-md flex items-center justify-center mb-8"
+                     style="background: #E8EAF6;">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24"
+                         fill="none" stroke="#3949AB" stroke-width="2" stroke-linecap="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                </div>
+                <h3 class="font-bold text-on-surface mb-3"
+                    style="font-size: 1.375rem;">
+                    Cyber Defense
+                </h3>
+                <p class="text-on-surface-variant mb-8"
+                   style="font-size: 0.9375rem; line-height: 1.6;">
+                    Zero-trust security frameworks protecting your digital
+                    perimeter from evolving global threats.
+                </p>
+                <a href="#"
+                   class="inline-flex items-center gap-2 text-primary font-semibold
+                          hover:text-primary-container transition-colors duration-200"
+                   style="font-size: 0.875rem;">
+                    Learn more <span aria-hidden="true">→</span>
+                </a>
+            </div>
+
+            <!-- Digital Transformation — 3 cols -->
+            <div class="md:col-span-3 bg-primary-container rounded-lg p-8
+                        flex flex-col md:flex-row items-center gap-8 overflow-hidden">
+
+                <!-- Text -->
+                <div class="flex-1">
+                    <h3 class="font-bold text-on-primary mb-4"
+                        style="font-size: 1.75rem; letter-spacing: -0.01em;">
+                        Digital Transformation
+                    </h3>
+                    <p class="text-on-primary opacity-90"
+                       style="font-size: 0.9375rem; line-height: 1.6;">
+                        We don't just update software; we rewire your operational
+                        DNA for a digital-first world, ensuring long-term market
+                        leadership through technological agility.
+                    </p>
+                </div>
+
+                <!-- Image -->
+                <div class="w-full md:w-64 h-48 rounded-md overflow-hidden shrink-0"
+                     style="background: #1E2124;">
+                    <img src="{% static 'images/hero_image.svg' %}"
+                         alt="Digital Transformation"
+                         class="w-full h-full object-cover opacity-80">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
