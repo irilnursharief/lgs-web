@@ -57,6 +57,7 @@ TEMPLATES = [
                 "core.context_processors.nav_links",
                 "core.context_processors.methodology_steps",
                 "core.context_processors.testimonials",
+                "core.context_processors.clients",
             ],
         },
     },
