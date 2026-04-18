@@ -65,3 +65,13 @@ def testimonials(request):
             },
         ]
     }
+
+
+def clients(request):
+    return {
+        "clients": [
+            {"name": "Compreline Insurance Consultancy Inc."},
+            {"name": "Uni-Vanguard Insurance Agency Inc."},
+            {"name": "RAKKII AUTO SERVICE"},
+        ]
+    }
