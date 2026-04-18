@@ -34,3 +34,34 @@ def methodology_steps(request):
             },
         ]
     }
+
+
+def testimonials(request):
+    return {
+        "testimonials": [
+            {
+                "quote": "The engineering rigor LGS brought to our cloud migration was unparalleled. They didn't just move our workloads; they completely re-imagined how our global data infrastructure operates. They are the benchmark for technical partnership.",
+                "name": "Marcus Sterling",
+                "title": "Chief Technology Officer, Global Logistics Corp",
+                "avatar": "https://i.pravatar.cc/48?img=57",
+            },
+            {
+                "quote": "LGS didn't just deliver a system — they delivered confidence. Their architectural approach gave us the scalability we needed to grow threefold without a single incident. Truly world-class engineers.",
+                "name": "Sandra Voss",
+                "title": "VP of Engineering, Meridian Financial",
+                "avatar": "https://i.pravatar.cc/48?img=47",
+            },
+            {
+                "quote": "From discovery to deployment, the LGS team operated with a level of precision and transparency we've never seen from a technology partner. They are now an extension of our own team.",
+                "name": "David Okoro",
+                "title": "Head of Digital, Nexus Retail Group",
+                "avatar": "https://i.pravatar.cc/48?img=12",
+            },
+            {
+                "quote": "The AI pipeline LGS built for us processes over 2 million records daily with 99.97% accuracy. That's not a vendor relationship — that's a strategic advantage.",
+                "name": "Priya Nambiar",
+                "title": "Chief Data Officer, Orion Healthcare",
+                "avatar": "https://i.pravatar.cc/48?img=23",
+            },
+        ]
+    }

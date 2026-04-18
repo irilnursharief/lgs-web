@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>{% block title %}LGS{% endblock %}</title>
+    {% load static %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    {% load static %}
     <link rel="stylesheet" href="{% static 'css/output.css' %}">
 </head>
 <body class="font-sans bg-surface text-on-surface">
     {% include 'partials/_navbar.html' %}
     {% block content %}{% endblock %}
+    <script src="{% static 'js/carousel.js' %}"></script>
 </body>
 </html>
