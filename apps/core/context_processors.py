@@ -75,3 +75,25 @@ def clients(request):
             {"name": "RAKKII AUTO SERVICE"},
         ]
     }
+
+
+def footer_links(request):
+    return {
+        "footer_services": [
+            {"label": "Cloud Strategy", "url": "#capabilities"},
+            {"label": "AI & Machine Learning", "url": "#capabilities"},
+            {"label": "Cyber Defense", "url": "#capabilities"},
+            {"label": "Digital Transformation", "url": "#capabilities"},
+        ],
+        "footer_company": [
+            {"label": "Our Methodology", "url": "#process"},
+            {"label": "Client Stories", "url": "#testimonials"},
+            {"label": "Insights", "url": "#insights"},
+            {"label": "Contact Us", "url": "#contact"},
+        ],
+        "footer_legal": [
+            {"label": "Privacy Policy", "url": "#"},
+            {"label": "Terms of Service", "url": "#"},
+            {"label": "Cookie Settings", "url": "#"},
+        ],
+    }
