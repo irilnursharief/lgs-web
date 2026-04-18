@@ -56,6 +56,7 @@ TEMPLATES = [
                 "django.contrib.messages.context_processors.messages",
                 "core.context_processors.nav_links",
                 "core.context_processors.methodology_steps",
+                "core.context_processors.testimonials",
             ],
         },
     },
