@@ -1,0 +1,18 @@
+New contact form submission from the LGS website.
+
+─────────────────────────────────────
+CONTACT DETAILS
+─────────────────────────────────────
+Full Name:        {{ data.full_name }}
+Work Email:       {{ data.work_email }}
+Company:          {{ data.company_name }}
+Phone:            {{ data.phone_number|default:"Not provided" }}
+Service Interest: {{ data.service_interest }}
+
+─────────────────────────────────────
+MESSAGE
+─────────────────────────────────────
+{{ data.message }}
+
+─────────────────────────────────────
+This email was sent from the LGS website contact form.
