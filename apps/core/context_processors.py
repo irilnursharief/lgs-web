@@ -1,10 +1,10 @@
 def nav_links(request):
     return {
         "nav_links": [
-            {"label": "Solutions", "url": "#solutions", "name": "home"},
-            {"label": "Capabilities", "url": "#capabilities", "name": "home"},
-            {"label": "Process", "url": "#process", "name": "home"},
-            {"label": "Insights", "url": "#insights", "name": "home"},
+            {"label": "Solutions", "url": "#", "coming_soon": True},
+            {"label": "Capabilities", "url": "#capabilities", "coming_soon": False},
+            {"label": "Process", "url": "#process", "coming_soon": False},
+            {"label": "Insights", "url": "#", "coming_soon": True},
         ]
     }
 
