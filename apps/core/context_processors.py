@@ -86,10 +86,10 @@ def footer_links(request):
             {"label": "Digital Transformation", "url": "#capabilities"},
         ],
         "footer_company": [
-            {"label": "Our Methodology", "url": "#process"},
-            {"label": "Client Stories", "url": "#testimonials"},
-            {"label": "Insights", "url": "#insights"},
-            {"label": "Contact Us", "url": "#contact"},
+            {"label": "Our Methodology", "url": "#process", "open_modal": False},
+            {"label": "Client Stories", "url": "#testimonials", "open_modal": False},
+            {"label": "Insights", "url": "#insights", "open_modal": False},
+            {"label": "Contact Us", "url": "#", "open_modal": True},
         ],
         "footer_legal": [
             {"label": "Privacy Policy", "url": "#"},

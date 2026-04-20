@@ -6,31 +6,25 @@
 
             <!-- Brand Column — wider -->
             <div class="md:col-span-4 flex flex-col gap-5">
-                <a href="{% url 'home' %}"
-                   class="font-extrabold text-white text-xl tracking-tight">
+                <a href="{% url 'home' %}" class="font-extrabold text-white text-xl tracking-tight">
                     LGS
                 </a>
-                <p class="text-white leading-relaxed"
-                   style="font-size: 0.875rem; line-height: 1.7; opacity: 0.45;">
+                <p class="text-white leading-relaxed" style="font-size: 0.875rem; line-height: 1.7; opacity: 0.45;">
                     Engineering excellence for the<br>digital-first enterprise.
                 </p>
                 <div class="flex items-center gap-4 mt-2">
-                    <a href="#"
-                       class="text-white opacity-40 hover:opacity-100
+                    <a href="#" class="text-white opacity-40 hover:opacity-100
                               transition-opacity duration-200">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5"
-                             viewBox="0 0 24 24" fill="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0
                                      0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1
-                                     6-6zM2 9h4v12H2z"/>
-                            <circle cx="4" cy="4" r="2"/>
+                                     6-6zM2 9h4v12H2z" />
+                            <circle cx="4" cy="4" r="2" />
                         </svg>
                     </a>
-                    <a href="#"
-                       class="text-white opacity-40 hover:opacity-100
+                    <a href="#" class="text-white opacity-40 hover:opacity-100
                               transition-opacity duration-200">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
-                             viewBox="0 0 24 24" fill="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37
                                      3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54
                                      6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07
@@ -38,7 +32,7 @@
                                      0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07
                                      0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0
                                      5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9
-                                     18.13V22"/>
+                                     18.13V22" />
                         </svg>
                     </a>
                 </div>
@@ -49,17 +43,14 @@
 
             <!-- Services Column -->
             <div class="md:col-span-2 flex flex-col gap-5">
-                <h4 class="font-semibold text-white tracking-[0.05em] uppercase"
-                    style="font-size: 0.75rem;">
+                <h4 class="font-semibold text-white tracking-[0.05em] uppercase" style="font-size: 0.75rem;">
                     Services
                 </h4>
                 <ul class="flex flex-col gap-3">
                     {% for item in footer_services %}
                     <li>
-                        <a href="{{ item.url }}"
-                           class="text-white opacity-45 hover:opacity-100
-                                  transition-opacity duration-200"
-                           style="font-size: 0.875rem;">
+                        <a href="{{ item.url }}" class="text-white opacity-45 hover:opacity-100
+                                  transition-opacity duration-200" style="font-size: 0.875rem;">
                             {{ item.label }}
                         </a>
                     </li>
@@ -69,19 +60,23 @@
 
             <!-- Company Column -->
             <div class="md:col-span-2 flex flex-col gap-5">
-                <h4 class="font-semibold text-white tracking-[0.05em] uppercase"
-                    style="font-size: 0.75rem;">
+                <h4 class="font-semibold text-white tracking-[0.05em] uppercase" style="font-size: 0.75rem;">
                     Company
                 </h4>
                 <ul class="flex flex-col gap-3">
                     {% for item in footer_company %}
                     <li>
-                        <a href="{{ item.url }}"
-                           class="text-white opacity-45 hover:opacity-100
-                                  transition-opacity duration-200"
-                           style="font-size: 0.875rem;">
+                        {% if item.open_modal %}
+                        <a href="#" data-open-modal class="text-white opacity-45 hover:opacity-100
+                  transition-opacity duration-200" style="font-size: 0.875rem;">
                             {{ item.label }}
                         </a>
+                        {% else %}
+                        <a href="{{ item.url }}" class="text-white opacity-45 hover:opacity-100
+                  transition-opacity duration-200" style="font-size: 0.875rem;">
+                            {{ item.label }}
+                        </a>
+                        {% endif %}
                     </li>
                     {% endfor %}
                 </ul>
@@ -89,30 +84,24 @@
 
             <!-- Get In Touch Column -->
             <div class="md:col-span-3 flex flex-col gap-5">
-                <h4 class="font-semibold text-white tracking-[0.05em] uppercase"
-                    style="font-size: 0.75rem;">
+                <h4 class="font-semibold text-white tracking-[0.05em] uppercase" style="font-size: 0.75rem;">
                     Get In Touch
                 </h4>
                 <ul class="flex flex-col gap-3">
                     <li>
-                        <a href="mailto:hello@lgs.com"
-                           class="text-white opacity-45 hover:opacity-100
-                                  transition-opacity duration-200"
-                           style="font-size: 0.875rem;">
+                        <a href="mailto:hello@lgs.com" class="text-white opacity-45 hover:opacity-100
+                                  transition-opacity duration-200" style="font-size: 0.875rem;">
                             hello@lgs.com
                         </a>
                     </li>
                     <li>
-                        <a href="tel:+1234567890"
-                           class="text-white opacity-45 hover:opacity-100
-                                  transition-opacity duration-200"
-                           style="font-size: 0.875rem;">
+                        <a href="tel:+1234567890" class="text-white opacity-45 hover:opacity-100
+                                  transition-opacity duration-200" style="font-size: 0.875rem;">
                             +1 (234) 567-890
                         </a>
                     </li>
                     <li>
-                        <p class="text-white opacity-45"
-                           style="font-size: 0.875rem;">
+                        <p class="text-white opacity-45" style="font-size: 0.875rem;">
                             Manila, Philippines
                         </p>
                     </li>
@@ -123,18 +112,14 @@
 
         <!-- Bottom Bar -->
         <div class="flex flex-col md:flex-row items-center justify-between
-                    py-6 gap-4"
-             style="border-top: 1px solid rgba(255,255,255,0.08);">
-            <p class="text-white opacity-40"
-               style="font-size: 0.8125rem;">
+                    py-6 gap-4" style="border-top: 1px solid rgba(255,255,255,0.08);">
+            <p class="text-white opacity-40" style="font-size: 0.8125rem;">
                 © 2026 LGS. All rights reserved.
             </p>
             <div class="flex items-center gap-8">
                 {% for item in footer_legal %}
-                <a href="{{ item.url }}"
-                   class="text-white opacity-40 hover:opacity-100
-                          transition-opacity duration-200"
-                   style="font-size: 0.8125rem;">
+                <a href="{{ item.url }}" class="text-white opacity-40 hover:opacity-100
+                          transition-opacity duration-200" style="font-size: 0.8125rem;">
                     {{ item.label }}
                 </a>
                 {% endfor %}
