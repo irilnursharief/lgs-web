@@ -36,13 +36,11 @@
         </ul>
 
         <!-- CTA -->
-        <div class="hidden md:flex items-center gap-4">
-            <a href="#" class="bg-primary-container text-white text-sm font-semibold
-                      px-5 py-2 rounded-md transition-opacity duration-200
-                      hover:opacity-90">
-                Get Started
-            </a>
-        </div>
+        <a href="#" data-open-modal class="bg-primary-container text-white text-sm font-semibold
+          px-5 py-2 rounded-md transition-opacity duration-200
+          hover:opacity-90">
+            Get Started
+        </a>
 
         <!-- Mobile Hamburger -->
         <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
@@ -71,8 +69,9 @@
         </a>
         {% endif %}
         {% endfor %}
-        <a href="#" class="bg-primary-container text-white text-sm font-semibold
-                  text-center px-5 py-2 rounded-md mt-2">
+        <a href="#" data-open-modal class="bg-primary-container text-white text-sm font-semibold
+          px-5 py-2 rounded-md transition-opacity duration-200
+          hover:opacity-90">
             Get Started
         </a>
     </div>
