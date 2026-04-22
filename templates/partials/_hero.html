@@ -1,78 +1,164 @@
 {% load static %}
 <section class="bg-surface">
-    <div class="max-w-7xl mx-auto px-6 py-20 w-full">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+    <div class="max-w-7xl mx-auto px-6 py-24 w-full">
 
-            <!-- Left Column -->
-            <div class="md:col-span-6 flex flex-col gap-6">
+        <!-- Slides Wrapper -->
+        <div id="hero-slides" class="relative">
 
-                <!-- Overline -->
-                <span class="text-primary-container font-semibold tracking-[0.05em] uppercase"
-                    style="font-size: 0.75rem;">
-                    Future-Proof Engineering
-                </span>
+            <!-- ─── Slide 1 — Digital Innovation ─── -->
+            <div class="hero-slide grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
 
-                <!-- Headline -->
-                <h1 class="font-extrabold leading-tight tracking-tight"
-                    style="font-size: 3.5rem; letter-spacing: -0.02em;">
-                    Empowering<br>
-                    <span class="text-primary-container">Digital Innovation</span>
-                </h1>
+                <!-- Left -->
+                <div class="md:col-span-6 flex flex-col gap-6">
+                    <span class="text-primary-container font-semibold tracking-[0.05em] uppercase"
+                        style="font-size: 0.75rem;">
+                        Future-Proof Engineering
+                    </span>
+                    <h1 class="font-extrabold leading-tight" style="font-size: 3.5rem; letter-spacing: -0.02em;">
+                        Empowering<br>
+                        <span class="text-primary-container">Digital Innovation</span>
+                    </h1>
+                    <p class="text-on-surface-variant max-w-md" style="font-size: 1rem; line-height: 1.6;">
+                        LGS orchestrates complex technological ecosystems, turning
+                        architectural visions into scalable digital realities for the
+                        world's most ambitious enterprises.
+                    </p>
+                    <div class="flex items-center gap-4 flex-wrap">
+                        <a href="#" data-open-modal class="inline-flex items-center gap-2 text-white font-semibold
+                                  px-6 py-3 rounded-md transition-all duration-200
+                                  hover:opacity-95 hover:scale-[1.02]" style="font-size: 0.875rem;
+                                  background: linear-gradient(135deg, #F97316, #9D4300);">
+                            Launch Transformation
+                            <span aria-hidden="true">→</span>
+                        </a>
+                        <a href="#capabilities" class="inline-flex items-center gap-2 font-semibold text-on-surface
+                                  px-6 py-3 rounded-md transition-all duration-200
+                                  hover:bg-surface-container-low hover:text-primary-container" style="font-size: 0.875rem;
+                                  border: 1px solid rgba(25, 28, 30, 0.15);">
+                            Explore Expertise
+                        </a>
+                    </div>
+                </div>
 
-                <!-- Body -->
-                <p class="text-on-surface-variant leading-relaxed max-w-md" style="font-size: 1rem; line-height: 1.6;">
-                    LGS orchestrates complex technological ecosystems, turning
-                    architectural visions into scalable digital realities for the
-                    world's most ambitious enterprises.
-                </p>
-
-                <!-- CTAs -->
-                <div class="flex items-center gap-4 flex-wrap">
-                    <!-- Primary CTA -->
-                    <a href="#" data-open-modal class="inline-flex items-center gap-2 text-white font-semibold
-                                px-6 py-3 rounded-md transition-all duration-200
-                                hover:opacity-95 hover:scale-[1.02]" style="background: linear-gradient(135deg, #F97316, #9D4300);
-                                font-size: 0.875rem;">
-                        Launch Transformation
-                        <span aria-hidden="true">→</span>
-                    </a>
-
-                    <!-- Secondary CTA -->
-                    <a href="#" class="inline-flex items-center gap-2 font-semibold text-on-surface
-                            px-6 py-3 rounded-md transition-all duration-200
-                            hover:bg-surface-container-low hover:text-primary-container" style="font-size: 0.875rem;
-                            border: 1px solid rgba(25, 28, 30, 0.15);">
-                        Explore Expertise
-                    </a>
+                <!-- Right -->
+                <div class="md:col-span-6 relative">
+                    <div class="relative rounded-lg overflow-hidden" style="background: #1E2124; min-height: 380px;">
+                        <img src="{% static 'images/hero_image.webp' %}" alt="LGS Network Infrastructure"
+                            class="absolute inset-0 w-full h-full object-cover opacity-80">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-surface-container-lowest
+                                px-6 py-5 rounded-md" style="box-shadow: 0px 20px 40px rgba(25, 28, 30, 0.06);">
+                        <p class="text-primary-container font-extrabold leading-none" style="font-size: 2.5rem;">
+                            99.9%
+                        </p>
+                        <p class="text-on-surface-variant font-semibold tracking-[0.05em] uppercase mt-1"
+                            style="font-size: 0.65rem;">
+                            Infrastructure<br>Reliability
+                        </p>
+                    </div>
                 </div>
 
             </div>
 
-            <!-- Right Column -->
-            <div class="md:col-span-6 relative">
+            <!-- ─── Slide 2 — FileMaker Development ─── -->
+            <div class="hero-slide hidden grid-cols-1 md:grid-cols-12 gap-12 items-center">
 
-                <!-- Dark Image Panel -->
-                <div class="relative rounded-lg overflow-hidden flex items-center justify-center"
-                    style="background: #1E2124; min-height: 380px;">
-                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                    <lottie-player src="{% static 'images/hero_animation.json' %}" background="transparent" speed="1"
-                        loop autoplay class="w-full h-full absolute inset-0 opacity-80">
-                    </lottie-player>
+                <!-- Left -->
+                <div class="md:col-span-6 flex flex-col gap-6">
+                    <span class="text-primary-container font-semibold tracking-[0.05em] uppercase"
+                        style="font-size: 0.75rem;">
+                        Enterprise Database Solutions
+                    </span>
+                    <h1 class="font-extrabold leading-tight" style="font-size: 3.5rem; letter-spacing: -0.02em;">
+                        Powerful<br>
+                        <span class="text-primary-container">FileMaker Development</span>
+                    </h1>
+                    <p class="text-on-surface-variant max-w-md" style="font-size: 1rem; line-height: 1.6;">
+                        We design and build custom FileMaker solutions that streamline
+                        your operations, automate workflows, and give your team the
+                        tools they need to work smarter.
+                    </p>
+                    <div class="flex items-center gap-4 flex-wrap">
+                        <a href="#" data-open-modal class="inline-flex items-center gap-2 text-white font-semibold
+                                  px-6 py-3 rounded-md transition-all duration-200
+                                  hover:opacity-95 hover:scale-[1.02]" style="font-size: 0.875rem;
+                                  background: linear-gradient(135deg, #F97316, #9D4300);">
+                            Explore FileMaker
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Floating Stats Card -->
-                <div class="absolute -bottom-6 -left-6 bg-surface-container-lowest
-                            px-6 py-5 rounded-md" style="box-shadow: 0px 20px 40px rgba(25, 28, 30, 0.06);">
-                    <p class="text-primary-container font-extrabold leading-none" style="font-size: 2.5rem;">
-                        99.9%
-                    </p>
-                    <p class="text-on-surface-variant font-semibold tracking-[0.05em] uppercase mt-1"
-                        style="font-size: 0.65rem;">
-                        Infrastructure<br>Reliability
-                    </p>
+                <!-- Right — YouTube embed -->
+                <div class="md:col-span-6 relative">
+                    <div class="relative rounded-lg overflow-hidden" style="background: #1E2124; min-height: 380px;">
+                        <iframe src="https://www.youtube.com/watch?v=yHOOlqWpT4o" title="FileMaker Development"
+                            frameborder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen class="absolute inset-0 w-full h-full">
+                        </iframe>
+                    </div>
                 </div>
 
             </div>
+
+            <!-- ─── Slide 3 — Custom Web App Development ─── -->
+            <div class="hero-slide hidden grid-cols-1 md:grid-cols-12 gap-12 items-center">
+
+                <!-- Left -->
+                <div class="md:col-span-6 flex flex-col gap-6">
+                    <span class="text-primary-container font-semibold tracking-[0.05em] uppercase"
+                        style="font-size: 0.75rem;">
+                        Tailored Digital Solutions
+                    </span>
+                    <h1 class="font-extrabold leading-tight" style="font-size: 3.5rem; letter-spacing: -0.02em;">
+                        Custom<br>
+                        <span class="text-primary-container">Web Applications</span>
+                    </h1>
+                    <p class="text-on-surface-variant max-w-md" style="font-size: 1rem; line-height: 1.6;">
+                        From concept to deployment, we build bespoke web applications
+                        engineered around your specific business processes — scalable,
+                        maintainable, and built to grow with you.
+                    </p>
+                    <div class="flex items-center gap-4 flex-wrap">
+                        <a href="#" data-open-modal class="inline-flex items-center gap-2 text-white font-semibold
+                                  px-6 py-3 rounded-md transition-all duration-200
+                                  hover:opacity-95 hover:scale-[1.02]" style="font-size: 0.875rem;
+                                  background: linear-gradient(135deg, #F97316, #9D4300);">
+                            Start Your Project
+                            <span aria-hidden="true">→</span>
+                        </a>
+                        <a href="#capabilities" class="inline-flex items-center gap-2 font-semibold text-on-surface
+                                  px-6 py-3 rounded-md transition-all duration-200
+                                  hover:bg-surface-container-low hover:text-primary-container" style="font-size: 0.875rem;
+                                  border: 1px solid rgba(25, 28, 30, 0.15);">
+                            View Our Work
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right — illustration -->
+                <div class="md:col-span-6 relative">
+                    <div class="relative rounded-lg overflow-hidden flex items-center
+                                justify-center p-8" style="background: #1E2124; min-height: 380px;">
+                        <img src="{% static 'images/programming.svg' %}" alt="Custom Web Application Development"
+                            class="w-full h-full object-contain" style="max-height: 320px;">
+                    </div>
+                </div>
+
+            </div>
+
         </div>
+
+        <!-- Dot Navigation -->
+        <div class="flex items-center justify-center gap-3 mt-16">
+            <button class="hero-dot w-2.5 h-2.5 rounded-full transition-all duration-300
+                           bg-primary-container" data-index="0" aria-label="Slide 1"></button>
+            <button class="hero-dot w-2.5 h-2.5 rounded-full transition-all duration-300
+                           bg-surface-container" data-index="1" aria-label="Slide 2"></button>
+            <button class="hero-dot w-2.5 h-2.5 rounded-full transition-all duration-300
+                           bg-surface-container" data-index="2" aria-label="Slide 3"></button>
+        </div>
+
     </div>
 </section>
