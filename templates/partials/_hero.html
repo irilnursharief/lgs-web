@@ -89,15 +89,26 @@
                     </div>
                 </div>
 
-                <!-- Right — YouTube embed -->
+                <!-- Right — YouTube thumbnail link -->
                 <div class="md:col-span-6 relative">
-                    <div class="relative rounded-lg overflow-hidden" style="background: #1E2124; min-height: 380px;">
-                        <iframe src="https://www.youtube.com/watch?v=yHOOlqWpT4o" title="FileMaker Development"
-                            frameborder="0"
-                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen class="absolute inset-0 w-full h-full">
-                        </iframe>
-                    </div>
+                    <a href="https://www.youtube.com/watch?v=yHOOlqWpT4o" target="_blank" rel="noopener noreferrer"
+                        class="group block relative rounded-lg overflow-hidden"
+                        style="background: #1E2124; min-height: 380px;">
+                        <!-- YouTube auto-generated thumbnail -->
+                        <img src="https://img.youtube.com/vi/yHOOlqWpT4o/maxresdefault.jpg"
+                            alt="FileMaker Development Video" class="absolute inset-0 w-full h-full object-cover opacity-90
+                                    transition-opacity duration-200 group-hover:opacity-70">
+                        <!-- Play button overlay -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-20 h-20 rounded-full flex items-center justify-center
+                                        transition-transform duration-200 group-hover:scale-110"
+                                style="background: rgba(249, 115, 22, 0.9);">
+                                <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
                 </div>
 
             </div>
