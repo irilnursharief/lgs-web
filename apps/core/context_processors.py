@@ -80,10 +80,10 @@ def clients(request):
 def footer_links(request):
     return {
         "footer_services": [
-            {"label": "Cloud Strategy", "url": "#capabilities"},
-            {"label": "AI & Machine Learning", "url": "#capabilities"},
-            {"label": "Cyber Defense", "url": "#capabilities"},
-            {"label": "Digital Transformation", "url": "#capabilities"},
+            {"label": "Solutions", "url": "#", "coming_soon": True},
+            {"label": "Capabilities", "url": "#capabilities", "coming_soon": False},
+            {"label": "Process", "url": "#process", "coming_soon": False},
+            {"label": "Insights", "url": "#", "coming_soon": True},
         ],
         "footer_company": [
             {"label": "Our Methodology", "url": "#process", "open_modal": False},
